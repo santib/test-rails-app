@@ -61,7 +61,7 @@ jobs:
           bundler-cache: true
 
       - name: Configure parallelization
-        run: echo "PARALLEL_WORKERS=$(nproc)" >> $GITHUB_ENV
+        run: echo "PARALLEL_WORKERS=2" >> $GITHUB_ENV
 
       - name: Run tests
         env:
